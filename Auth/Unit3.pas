@@ -8,16 +8,19 @@ uses
 
 type
   TForm3 = class(TForm)
-    Button1: TButton;
     Label1: TLabel;
     GroupBox1: TGroupBox;
-    Button2: TButton;
+    btnMy_pofile: TButton;
+    btnMessages: TButton;
+    btnPrint_queue: TButton;
+    btnQuestions_for_consultants: TButton;
     Button3: TButton;
-    Button4: TButton;
-    Button5: TButton;
     procedure Button1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
-    procedure Button2Click(Sender: TObject);
+    procedure btnMy_pofileClick(Sender: TObject);
+    procedure btnMessagesClick(Sender: TObject);
+    procedure btnPrint_queueClick(Sender: TObject);
+    procedure btnQuestions_for_consultantsClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,7 +34,7 @@ implementation
 
 {$R *.dfm}
 
-uses Unit1, Unit4;
+uses Unit1, Unit4, Unit5, Unit6, Unit7;
 
 procedure TForm3.Button1Click(Sender: TObject);
 begin
@@ -39,9 +42,24 @@ begin
   Form1.Close;
 end;
 
-procedure TForm3.Button2Click(Sender: TObject);
+procedure TForm3.btnMessagesClick(Sender: TObject);
+begin
+  Form5.ShowModal;
+end;
+
+procedure TForm3.btnMy_pofileClick(Sender: TObject);
 begin
   Form4.ShowModal;
+end;
+
+procedure TForm3.btnPrint_queueClick(Sender: TObject);
+begin
+  Form6.ShowModal;
+end;
+
+procedure TForm3.btnQuestions_for_consultantsClick(Sender: TObject);
+begin
+  Form7.ShowModal;
 end;
 
 procedure TForm3.FormClose(Sender: TObject; var Action: TCloseAction);
