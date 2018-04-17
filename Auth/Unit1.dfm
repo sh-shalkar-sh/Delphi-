@@ -16,9 +16,9 @@ object Form1: TForm1
   object Label1: TLabel
     Left = 24
     Top = 35
-    Width = 54
+    Width = 44
     Height = 18
-    Caption = 'Label1'
+    Caption = 'Login'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -29,9 +29,9 @@ object Form1: TForm1
   object Label2: TLabel
     Left = 24
     Top = 75
-    Width = 54
+    Width = 77
     Height = 18
-    Caption = 'Label2'
+    Caption = 'Password'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -40,11 +40,11 @@ object Form1: TForm1
     ParentFont = False
   end
   object btnLog: TButton
-    Left = 214
+    Left = 176
     Top = 128
-    Width = 75
+    Width = 113
     Height = 25
-    Caption = 'btnLog'
+    Caption = 'Log in'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -80,13 +80,14 @@ object Form1: TForm1
     ParentFont = False
     PasswordChar = '*'
     TabOrder = 2
+    OnKeyPress = edPasswordKeyPress
   end
   object btnClose: TButton
     Left = 24
     Top = 128
-    Width = 75
+    Width = 113
     Height = 25
-    Caption = 'btnClose'
+    Caption = 'Close'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16

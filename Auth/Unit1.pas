@@ -16,6 +16,7 @@ type
     btnClose: TButton;
     procedure btnLogClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
+    procedure edPasswordKeyPress(Sender: TObject; var Key: Char);
   private
     { Private declarations }
   public
@@ -53,6 +54,12 @@ begin
           Form3.Show;
           Form1.Hide;
           end;
+end;
+
+procedure TForm1.edPasswordKeyPress(Sender: TObject; var Key: Char);
+begin
+  if key=#13 then btnLog.Click;
+
 end;
 
 end.
