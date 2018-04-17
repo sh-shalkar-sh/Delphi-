@@ -5,7 +5,7 @@ object DataModule2: TDataModule2
   object ADOConnection1: TADOConnection
     ConnectionString = 
       'Provider=MSDASQL.1;Persist Security Info=False;User ID=postgres;' +
-      'Data Source=PostgreSQL35W'
+      'Data Source=PostgreSQL01'
     LoginPrompt = False
     Provider = 'MSDASQL.1'
     Left = 104

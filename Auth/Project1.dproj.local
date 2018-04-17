@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.864,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Project1.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.562,=D:\Student\Desktop\agro\Delphi-\Auth\Unit4.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.965,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit3.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.307,=D:\Student\Desktop\agro\Delphi-\Auth\Unit7.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.056,=D:\Student\Desktop\agro\Delphi-\Auth\Unit7.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.658,=D:\Student\Desktop\agro\Delphi-\Auth\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.063,=D:\Student\Desktop\agro\Delphi-\Auth\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.dfm=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.669,=D:\Student\Desktop\agro\Delphi-\Auth\Unit7.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.855,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.056,=D:\Student\Desktop\agro\Delphi-\Auth\Unit7.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.307,=D:\Student\Desktop\agro\Delphi-\Auth\Unit7.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.pas=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.972,=D:\Student\Desktop\agro\Delphi-\Auth\Unit6.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.333,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit2.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.063,=D:\Student\Desktop\agro\Delphi-\Auth\Unit5.pas</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.658,=D:\Student\Desktop\agro\Delphi-\Auth\Unit5.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.855,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Project1.dproj=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.965,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit3.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.376,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
   </Transactions>
 	<ProjectSortOrder AutoSort="0" SortType="0">
