@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Form1'
-  ClientHeight = 185
+  ClientHeight = 174
   ClientWidth = 339
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -66,7 +66,6 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    Text = 'edLogin'
   end
   object edPassword: TEdit
     Left = 168
@@ -79,8 +78,8 @@ object Form1: TForm1
     Font.Name = 'Verdana'
     Font.Style = []
     ParentFont = False
+    PasswordChar = '*'
     TabOrder = 2
-    Text = 'edPassword'
   end
   object btnClose: TButton
     Left = 24
