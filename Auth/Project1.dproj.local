@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.965,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.864,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.333,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit2.pas</Transaction>
     <Transaction>1899.12.30 00:00:00.000.855,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018.04.17 14:54:42.376,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018.04.17 14:55:07.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.pas=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2018.04.17 14:55:07.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.dfm=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2018.04.17 14:55:08.864,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Project1.dproj=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
-    <Transaction>2018.04.17 14:57:54.333,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit2.pas</Transaction>
-    <Transaction>2018.04.17 15:08:03.965,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.376,=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.948,C:\Users\Student\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Student\Documents\Embarcadero\Studio\Projects\Auth\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

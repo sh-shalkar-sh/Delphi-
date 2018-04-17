@@ -14,9 +14,22 @@ object Form3: TForm3
   OnClose = FormClose
   PixelsPerInch = 96
   TextHeight = 13
+  object Label1: TLabel
+    Left = 400
+    Top = 8
+    Width = 187
+    Height = 45
+    Caption = 'AGROMES'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -37
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object Button1: TButton
-    Left = 240
-    Top = 104
+    Left = 400
+    Top = 184
     Width = 75
     Height = 25
     Caption = 'Button1'

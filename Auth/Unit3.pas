@@ -9,6 +9,7 @@ uses
 type
   TForm3 = class(TForm)
     Button1: TButton;
+    Label1: TLabel;
     procedure Button1Click(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
