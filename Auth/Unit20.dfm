@@ -1,7 +1,7 @@
-object Form20: TForm20
+object Plans_for_the_development_of_culturesForm: TPlans_for_the_development_of_culturesForm
   Left = 0
   Top = 0
-  Caption = 'Form20'
+  Caption = 'Plans_for_the_development_of_culturesForm'
   ClientHeight = 299
   ClientWidth = 635
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form20: TForm20
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

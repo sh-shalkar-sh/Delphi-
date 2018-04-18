@@ -113,71 +113,71 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit4.pas">
-            <Form>Form4</Form>
+            <Form>myProfilForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit5.pas">
-            <Form>Form5</Form>
+            <Form>messageForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit6.pas">
-            <Form>Form6</Form>
+            <Form>printQueueForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit7.pas">
-            <Form>Form7</Form>
+            <Form>Questions_for_consultantsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit8.pas">
-            <Form>Form8</Form>
+            <Form>General_informationForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit9.pas">
-            <Form>Form9</Form>
+            <Form>Structure_companyForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit10.pas">
-            <Form>Form10</Form>
+            <Form>EmployeeForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit11.pas">
-            <Form>Form11</Form>
+            <Form>Machines_and_aggregatesForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit12.pas">
-            <Form>Form12</Form>
+            <Form>Work_shiftsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit13.pas">
-            <Form>Form13</Form>
+            <Form>Technology_of_cultivationForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit14.pas">
-            <Form>Form14</Form>
+            <Form>Types_of_jobsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit15.pas">
-            <Form>Form15</Form>
+            <Form>Rating_workForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit16.pas">
-            <Form>Form16</Form>
+            <Form>VarietiesForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit17.pas">
-            <Form>Form17</Form>
+            <Form>FertilizerForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit18.pas">
-            <Form>Form18</Form>
+            <Form>SZRForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit19.pas">
-            <Form>Form19</Form>
+            <Form>Other_goods_and_materialsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit20.pas">
-            <Form>Form20</Form>
+            <Form>Plans_for_the_development_of_culturesForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

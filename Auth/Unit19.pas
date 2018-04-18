@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TForm19 = class(TForm)
+  TOther_goods_and_materialsForm = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form19: TForm19;
+  Other_goods_and_materialsForm: TOther_goods_and_materialsForm;
 
 implementation
 

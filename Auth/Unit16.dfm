@@ -1,7 +1,7 @@
-object Form16: TForm16
+object VarietiesForm: TVarietiesForm
   Left = 0
   Top = 0
-  Caption = 'Form16'
+  Caption = 'VarietiesForm'
   ClientHeight = 302
   ClientWidth = 357
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form16: TForm16
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

@@ -1,7 +1,7 @@
-object Form17: TForm17
+object FertilizerForm: TFertilizerForm
   Left = 0
   Top = 0
-  Caption = 'Form17'
+  Caption = 'FertilizerForm'
   ClientHeight = 346
   ClientWidth = 432
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form17: TForm17
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

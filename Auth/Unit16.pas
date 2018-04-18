@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TForm16 = class(TForm)
+  TVarietiesForm = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form16: TForm16;
+  VarietiesForm: TVarietiesForm;
 
 implementation
 

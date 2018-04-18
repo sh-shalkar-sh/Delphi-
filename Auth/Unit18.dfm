@@ -1,7 +1,7 @@
-object Form18: TForm18
+object SZRForm: TSZRForm
   Left = 0
   Top = 0
-  Caption = 'Form18'
+  Caption = 'SZRForm'
   ClientHeight = 299
   ClientWidth = 635
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form18: TForm18
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

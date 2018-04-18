@@ -1,7 +1,7 @@
-object Form12: TForm12
+object Work_shiftsForm: TWork_shiftsForm
   Left = 0
   Top = 0
-  Caption = 'Form12'
+  Caption = 'Work_shiftsForm'
   ClientHeight = 319
   ClientWidth = 445
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form12: TForm12
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

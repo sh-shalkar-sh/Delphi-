@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TForm15 = class(TForm)
+  TRating_workForm = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form15: TForm15;
+  Rating_workForm: TRating_workForm;
 
 implementation
 

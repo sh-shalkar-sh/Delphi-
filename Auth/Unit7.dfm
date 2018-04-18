@@ -1,7 +1,7 @@
-object Form7: TForm7
+object Questions_for_consultantsForm: TQuestions_for_consultantsForm
   Left = 0
   Top = 0
-  Caption = 'Form7'
+  Caption = 'Questions_for_consultantsForm'
   ClientHeight = 299
   ClientWidth = 635
   Color = clBtnFace

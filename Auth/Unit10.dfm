@@ -1,7 +1,7 @@
-object Form10: TForm10
+object EmployeeForm: TEmployeeForm
   Left = 0
   Top = 0
-  Caption = 'Form10'
+  Caption = 'EmployeeForm'
   ClientHeight = 308
   ClientWidth = 493
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form10: TForm10
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

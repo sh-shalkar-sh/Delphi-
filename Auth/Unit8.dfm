@@ -1,7 +1,7 @@
-object Form8: TForm8
+object General_informationForm: TGeneral_informationForm
   Left = 0
   Top = 0
-  Caption = 'Form8'
+  Caption = 'General_informationForm'
   ClientHeight = 305
   ClientWidth = 416
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form8: TForm8
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

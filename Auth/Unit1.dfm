@@ -11,6 +11,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
   object login: TLabel
@@ -66,6 +67,7 @@ object Form1: TForm1
     Font.Style = []
     ParentFont = False
     TabOrder = 1
+    Text = 'admin'
   end
   object edPassword: TEdit
     Left = 168
@@ -80,6 +82,7 @@ object Form1: TForm1
     ParentFont = False
     PasswordChar = '*'
     TabOrder = 2
+    Text = 'admin'
     OnKeyPress = edPasswordKeyPress
   end
   object btnClose: TButton

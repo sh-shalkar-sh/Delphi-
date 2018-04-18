@@ -1,7 +1,7 @@
-object Form15: TForm15
+object Rating_workForm: TRating_workForm
   Left = 0
   Top = 0
-  Caption = 'Form15'
+  Caption = 'Rating_workForm'
   ClientHeight = 378
   ClientWidth = 464
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form15: TForm15
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

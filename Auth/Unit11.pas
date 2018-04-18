@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TForm11 = class(TForm)
+  TMachines_and_aggregatesForm = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form11: TForm11;
+  Machines_and_aggregatesForm: TMachines_and_aggregatesForm;
 
 implementation
 

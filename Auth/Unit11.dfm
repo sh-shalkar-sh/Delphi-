@@ -1,7 +1,7 @@
-object Form11: TForm11
+object Machines_and_aggregatesForm: TMachines_and_aggregatesForm
   Left = 0
   Top = 0
-  Caption = 'Form11'
+  Caption = 'Machines_and_aggregatesForm'
   ClientHeight = 325
   ClientWidth = 410
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form11: TForm11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

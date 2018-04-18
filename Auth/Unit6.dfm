@@ -1,7 +1,7 @@
-object Form6: TForm6
+object printQueueForm: TprintQueueForm
   Left = 0
   Top = 0
-  Caption = 'Form6'
+  Caption = 'printQueueForm'
   ClientHeight = 299
   ClientWidth = 635
   Color = clBtnFace

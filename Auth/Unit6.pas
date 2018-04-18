@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TForm6 = class(TForm)
+  TprintQueueForm = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form6: TForm6;
+  printQueueForm: TprintQueueForm;
 
 implementation
 

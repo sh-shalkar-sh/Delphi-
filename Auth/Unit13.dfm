@@ -1,7 +1,7 @@
-object Form13: TForm13
+object Technology_of_cultivationForm: TTechnology_of_cultivationForm
   Left = 0
   Top = 0
-  Caption = 'Form13'
+  Caption = 'Technology_of_cultivationForm'
   ClientHeight = 326
   ClientWidth = 509
   Color = clBtnFace
@@ -11,6 +11,7 @@ object Form13: TForm13
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
 end

@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 
 type
-  TForm14 = class(TForm)
+  TTypes_of_jobsForm = class(TForm)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  Form14: TForm14;
+  Types_of_jobsForm: TTypes_of_jobsForm;
 
 implementation
 
