@@ -18,6 +18,7 @@ type
     procedure btnLogClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
     procedure edPasswordKeyPress(Sender: TObject; var Key: Char);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -31,7 +32,7 @@ implementation
 
 {$R *.dfm}
 
-uses Unit2, Unit3;
+uses Unit2, Unit3, Unit21;
 
 procedure TForm1.btnCloseClick(Sender: TObject);
 begin
@@ -55,6 +56,11 @@ begin
           Form3.Show;
           Form1.Hide;
           end;
+end;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+Form21.ShowModal;
 end;
 
 procedure TForm1.edPasswordKeyPress(Sender: TObject; var Key: Char);

@@ -106,6 +106,13 @@ object Form1: TForm1
     Width = 121
     Height = 25
     Caption = #1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1103
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
+    OnClick = Button1Click
   end
 end

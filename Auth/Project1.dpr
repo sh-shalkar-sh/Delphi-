@@ -23,7 +23,9 @@ uses
   Unit19 in 'Unit19.pas' {Other_goods_and_materialsForm},
   Unit20 in 'Unit20.pas' {Plans_for_the_development_of_culturesForm},
   Vcl.Themes,
-  Vcl.Styles;
+  Vcl.Styles,
+  Unit21 in 'Unit21.pas' {Form21},
+  Unit22 in 'Unit22.pas' {DataModule22: TDataModule};
 
 {$R *.res}
 
@@ -51,5 +53,7 @@ begin
   Application.CreateForm(TSZRForm, SZRForm);
   Application.CreateForm(TOther_goods_and_materialsForm, Other_goods_and_materialsForm);
   Application.CreateForm(TPlans_for_the_development_of_culturesForm, Plans_for_the_development_of_culturesForm);
+  Application.CreateForm(TForm21, Form21);
+  Application.CreateForm(TDataModule22, DataModule22);
   Application.Run;
 end.
