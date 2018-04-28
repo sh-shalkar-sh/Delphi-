@@ -41,13 +41,13 @@ end;
 procedure TForm1.btnLogClick(Sender: TObject);
 begin
   DataModule2.ADOQuery1.SQL.Clear;
-  DataModule2.ADOQuery1.SQL.Add('Select password from agromes_my_profile Where email='+#39+edLogin.Text+#39);
+  DataModule2.ADOQuery1.SQL.Add('Select pass from users Where login='+#39+edLogin.Text+#39);
   DataModule2.ADOQuery1.Open;
   if DataModule2.ADOQuery1.IsEmpty
     then
       ShowMessage('Пользаватель ' +edLogin.Text+' не найден!')
     else
-      if DataModule2.ADOQuery1.FieldByName('password').Value<>edPassword.Text
+      if DataModule2.ADOQuery1.FieldByName('Pass').Value<>edPassword.Text
         then
         ShowMessage('Пароль не верный')
         else
