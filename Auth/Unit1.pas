@@ -14,6 +14,7 @@ type
     login: TLabel;
     Password: TLabel;
     btnClose: TButton;
+    Button1: TButton;
     procedure btnLogClick(Sender: TObject);
     procedure btnCloseClick(Sender: TObject);
     procedure edPasswordKeyPress(Sender: TObject; var Key: Char);

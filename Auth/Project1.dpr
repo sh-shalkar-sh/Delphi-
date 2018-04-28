@@ -21,13 +21,16 @@ uses
   Unit17 in 'Unit17.pas' {FertilizerForm},
   Unit18 in 'Unit18.pas' {SZRForm},
   Unit19 in 'Unit19.pas' {Other_goods_and_materialsForm},
-  Unit20 in 'Unit20.pas' {Plans_for_the_development_of_culturesForm};
+  Unit20 in 'Unit20.pas' {Plans_for_the_development_of_culturesForm},
+  Vcl.Themes,
+  Vcl.Styles;
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
+  TStyleManager.TrySetStyle('Luna');
   Application.CreateForm(TForm1, Form1);
   Application.CreateForm(TDataModule2, DataModule2);
   Application.CreateForm(TForm3, Form3);
