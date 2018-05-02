@@ -2,7 +2,7 @@ object fLogin: TfLogin
   Left = 0
   Top = 0
   Caption = 'fLogin'
-  ClientHeight = 201
+  ClientHeight = 203
   ClientWidth = 353
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -41,8 +41,8 @@ object fLogin: TfLogin
     ParentFont = False
   end
   object btnLog: TButton
-    Left = 168
-    Top = 128
+    Left = 224
+    Top = 120
     Width = 121
     Height = 25
     Caption = 'in application'
