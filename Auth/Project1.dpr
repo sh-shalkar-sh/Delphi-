@@ -2,16 +2,16 @@ program Project1;
 
 uses
   Vcl.Forms,
-  Unit1 in 'Unit1.pas' {Form1},
-  Unit2 in 'Unit2.pas' {DataModule2: TDataModule},
-  Unit3 in 'Unit3.pas' {Form3},
-  Unit4 in 'Unit4.pas' {myProfilForm},
-  Unit5 in 'Unit5.pas' {messageForm},
-  Unit6 in 'Unit6.pas' {printQueueForm},
-  Unit7 in 'Unit7.pas' {Questions_for_consultantsForm},
-  Unit8 in 'Unit8.pas' {General_informationForm},
-  Unit9 in 'Unit9.pas' {Structure_companyForm},
-  Unit10 in 'Unit10.pas' {EmployeeForm},
+  uLogin in 'uLogin.pas' {Form1},
+  uDM in 'uDM.pas' {DataModule2: TDataModule},
+  uMain in 'uMain.pas' {Form3},
+  uProfile in 'uProfile.pas' {myProfilForm},
+  uMessage in 'uMessage.pas' {messageForm},
+  uPrintQ in 'uPrintQ.pas' {printQueueForm},
+  uQuestion in 'uQuestion.pas' {Questions_for_consultantsForm},
+  uGeneralInfo in 'uGeneralInfo.pas' {General_informationForm},
+  uStructureComp in 'uStructureComp.pas' {Structure_companyForm},
+  uEmployee in 'uEmployee.pas' {EmployeeForm},
   Unit11 in 'Unit11.pas' {Machines_and_aggregatesForm},
   Unit12 in 'Unit12.pas' {Work_shiftsForm},
   Unit13 in 'Unit13.pas' {Technology_of_cultivationForm},
@@ -25,7 +25,8 @@ uses
   Vcl.Themes,
   Vcl.Styles,
   Unit21 in 'Unit21.pas' {Form21},
-  Unit22 in 'Unit22.pas' {DataModule22: TDataModule};
+  Unit22 in 'Unit22.pas' {DataModule22: TDataModule},
+  unitMessageUpdate in 'unitMessageUpdate.pas' {formMessUpdate};
 
 {$R *.res}
 
@@ -55,5 +56,6 @@ begin
   Application.CreateForm(TPlans_for_the_development_of_culturesForm, Plans_for_the_development_of_culturesForm);
   Application.CreateForm(TForm21, Form21);
   Application.CreateForm(TDataModule22, DataModule22);
+  Application.CreateForm(TformMessUpdate, formMessUpdate);
   Application.Run;
 end.

@@ -102,44 +102,44 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Unit1.pas">
+        <DCCReference Include="uLogin.pas">
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit2.pas">
+        <DCCReference Include="uDM.pas">
             <Form>DataModule2</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="Unit3.pas">
+        <DCCReference Include="uMain.pas">
             <Form>Form3</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit4.pas">
+        <DCCReference Include="uProfile.pas">
             <Form>myProfilForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit5.pas">
+        <DCCReference Include="uMessage.pas">
             <Form>messageForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit6.pas">
+        <DCCReference Include="uPrintQ.pas">
             <Form>printQueueForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit7.pas">
+        <DCCReference Include="uQuestion.pas">
             <Form>Questions_for_consultantsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit8.pas">
+        <DCCReference Include="uGeneralInfo.pas">
             <Form>General_informationForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit9.pas">
+        <DCCReference Include="uStructureComp.pas">
             <Form>Structure_companyForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit10.pas">
+        <DCCReference Include="uEmployee.pas">
             <Form>EmployeeForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
@@ -191,6 +191,10 @@
             <Form>DataModule22</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="unitMessageUpdate.pas">
+            <Form>formMessUpdate</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
