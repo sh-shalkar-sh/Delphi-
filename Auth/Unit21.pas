@@ -41,7 +41,7 @@ uses Unit22;
 
 procedure TForm21.Button1Click(Sender: TObject);
 begin
-  if (EditEmail.Text <> '') and (EditPassword.Text <> '') then
+  {if (EditEmail.Text <> '') and (EditPassword.Text <> '') then
     begin
       ADOQuery1.Parameters.ParamByName('RegEmail').VALUE:=EditEmail.Text;
       ADOQuery1.Parameters.ParamByName('RegPassword').VALUE:=EditPassword.Text;
@@ -49,7 +49,27 @@ begin
       ADOQuery1.Parameters.ParamByName('RegPhone').VALUE:=EditPhone.Text;
       ADOQuery1.Parameters.ParamByName('RegPosition').VALUE:=EditPosition.Text;
       ADOQuery1.ExecSQL;
-    end;
+    end; }
+
+    if (EditEmail.Text <> '') and (EditPassword.Text <> '') then
+begin
+
+Adoquery1.SQL.Text := 'select * from agromes_my_profile where trim(email)=:RegEmail and password=:RegPassword';
+Adoquery1.Parameters.ParamByName('RegEmail').Value:=trim(EditEmail.Text);
+Adoquery1.Parameters.ParamByName('RegPassword').Value:=EditPassword.Text;
+Adoquery1.Open;
+if Adoquery1.isEmpty
+then begin
+      Adoquery1.SQL.Text := 'INSERT INTO agromes_my_profile (email, password, fio, phone, position)VALUES(:RegEmail, :RegPassword, :RegFio, :RegPhone, :RegPosition)';
+      Adoquery1.Parameters.ParamByName('RegEmail').Value:=EditEmail.Text;
+      Adoquery1.Parameters.ParamByName('RegPassword').Value:=EditPassword.Text;
+      Adoquery1.Parameters.ParamByName('RegFio').Value:=EditFio.Text;
+      Adoquery1.Parameters.ParamByName('RegPhone').Value:=EditPhone.Text;
+      Adoquery1.Parameters.ParamByName('RegPosition').Value:=EditPosition.Text;
+      Adoquery1.ExecSQL;
+      end
+else ShowMessage('Такой логин уже существует!');
+end;
 
 
 end;
