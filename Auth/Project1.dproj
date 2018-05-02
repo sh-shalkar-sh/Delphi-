@@ -102,95 +102,90 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="Unit1.pas">
-            <Form>Form1</Form>
+        <DCCReference Include="uLogin.pas">
+            <Form>fLogin</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit2.pas">
+        <DCCReference Include="uDM.pas">
             <Form>DataModule2</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="Unit3.pas">
-            <Form>Form3</Form>
+        <DCCReference Include="uMain.pas">
+            <Form>fMain</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit4.pas">
+        <DCCReference Include="uProfile.pas">
             <Form>myProfilForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit5.pas">
+        <DCCReference Include="uMessage.pas">
             <Form>messageForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit6.pas">
+        <DCCReference Include="uPrintQ.pas">
             <Form>printQueueForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit7.pas">
+        <DCCReference Include="uQuestion.pas">
             <Form>Questions_for_consultantsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit8.pas">
+        <DCCReference Include="uGeneralInfo.pas">
             <Form>General_informationForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit9.pas">
+        <DCCReference Include="uStructureComp.pas">
             <Form>Structure_companyForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit10.pas">
+        <DCCReference Include="uEmployee.pas">
             <Form>EmployeeForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit11.pas">
+        <DCCReference Include="uMashines.pas">
             <Form>Machines_and_aggregatesForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit12.pas">
+        <DCCReference Include="uWorkShifts.pas">
             <Form>Work_shiftsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit13.pas">
+        <DCCReference Include="uTechnologyCult.pas">
             <Form>Technology_of_cultivationForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit14.pas">
+        <DCCReference Include="uTypesJob.pas">
             <Form>Types_of_jobsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit15.pas">
+        <DCCReference Include="uRatingWork.pas">
             <Form>Rating_workForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit16.pas">
+        <DCCReference Include="UVarieties.pas">
             <Form>VarietiesForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit17.pas">
+        <DCCReference Include="uVertilizer.pas">
             <Form>FertilizerForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit18.pas">
+        <DCCReference Include="uSZR.pas">
             <Form>SZRForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit19.pas">
+        <DCCReference Include="uOtherGoods.pas">
             <Form>Other_goods_and_materialsForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit20.pas">
+        <DCCReference Include="uPlansCultures.pas">
             <Form>Plans_for_the_development_of_culturesForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="Unit21.pas">
+        <DCCReference Include="uRegistration.pas">
             <Form>Form21</Form>
             <FormType>dfm</FormType>
-        </DCCReference>
-        <DCCReference Include="Unit22.pas">
-            <Form>DataModule22</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
