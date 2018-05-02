@@ -24,7 +24,8 @@ uses
   uPlansCultures in 'uPlansCultures.pas' {Plans_for_the_development_of_culturesForm},
   Vcl.Themes,
   Vcl.Styles,
-  uRegistration in 'uRegistration.pas' {Form21};
+  uRegistration in 'uRegistration.pas' {Form21},
+  uAbout in 'uAbout.pas' {fAbout};
 
 {$R *.res}
 
@@ -53,5 +54,6 @@ begin
   Application.CreateForm(TOther_goods_and_materialsForm, Other_goods_and_materialsForm);
   Application.CreateForm(TPlans_for_the_development_of_culturesForm, Plans_for_the_development_of_culturesForm);
   Application.CreateForm(TForm21, Form21);
+  Application.CreateForm(TfAbout, fAbout);
   Application.Run;
 end.
