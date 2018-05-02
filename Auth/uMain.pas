@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TForm3 = class(TForm)
+  TfMain = class(TForm)
     Label1: TLabel;
     GroupBox1: TGroupBox;
     btnMy_pofile: TButton;
@@ -31,7 +31,6 @@ type
     btnOther_goods_and_materials: TButton;
     btnPlans_for_the_development_of_cultures: TButton;
     btngroupMy_company: TGroupBox;
-    procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnMy_pofileClick(Sender: TObject);
     procedure btnMessagesClick(Sender: TObject);
     procedure btnPrint_queueClick(Sender: TObject);
@@ -50,6 +49,7 @@ type
     procedure btnSZRClick(Sender: TObject);
     procedure btnOther_goods_and_materialsClick(Sender: TObject);
     procedure btnPlans_for_the_development_of_culturesClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
   private
     { Private declarations }
   public
@@ -57,109 +57,109 @@ type
   end;
 
 var
-  Form3: TForm3;
+  fMain: TfMain;
 
 implementation
 
 {$R *.dfm}
 
-uses Unit1, Unit4, Unit5, Unit6, Unit7, Unit8, Unit9, Unit10, Unit11, Unit12,
-  Unit13, Unit14, Unit15, Unit16, Unit17, Unit18, Unit19, Unit20, Unit2;
+uses uDM, uProfile, uMessage, uLogin;
 
-procedure TForm3.btnEmployeeClick(Sender: TObject);
+procedure TfMain.btnEmployeeClick(Sender: TObject);
 begin
-  EmployeeForm.ShowModal;
+  //EmployeeForm.ShowModal;
 end;
 
-procedure TForm3.btnFertilizerClick(Sender: TObject);
+procedure TfMain.btnFertilizerClick(Sender: TObject);
 begin
-  FertilizerForm.ShowModal;
+  //FertilizerForm.ShowModal;
 end;
 
-procedure TForm3.btnGeneral_informationClick(Sender: TObject);
+procedure TfMain.btnGeneral_informationClick(Sender: TObject);
 begin
-  General_informationForm.ShowModal;
+  //General_informationForm.ShowModal;
 end;
 
-procedure TForm3.btnMachines_and_aggregatesClick(Sender: TObject);
+procedure TfMain.btnMachines_and_aggregatesClick(Sender: TObject);
 begin
-  Machines_and_aggregatesForm.ShowModal;
+  //Machines_and_aggregatesForm.ShowModal;
 end;
 
-procedure TForm3.btnMessagesClick(Sender: TObject);
+procedure TfMain.btnMessagesClick(Sender: TObject);
 begin
   messageForm.ShowModal;
 end;
 
-procedure TForm3.btnMy_pofileClick(Sender: TObject);
+procedure TfMain.btnMy_pofileClick(Sender: TObject);
 begin
-  myProfilForm.ShowModal;
+  //myProfilForm.ShowModal;
 end;
 
-procedure TForm3.btnOther_goods_and_materialsClick(Sender: TObject);
+procedure TfMain.btnOther_goods_and_materialsClick(Sender: TObject);
 begin
-  Other_goods_and_materialsForm.ShowModal;
+  //Other_goods_and_materialsForm.ShowModal;
 end;
 
-procedure TForm3.btnPlans_for_the_development_of_culturesClick(Sender: TObject);
+procedure TfMain.btnPlans_for_the_development_of_culturesClick(Sender: TObject);
 begin
-  Plans_for_the_development_of_culturesForm.ShowModal;
+  //Plans_for_the_development_of_culturesForm.ShowModal;
 end;
 
-procedure TForm3.btnPrint_queueClick(Sender: TObject);
+procedure TfMain.btnPrint_queueClick(Sender: TObject);
 begin
-  printQueueForm.ShowModal;
+  //printQueueForm.ShowModal;
 end;
 
-procedure TForm3.btnQuestions_for_consultantsClick(Sender: TObject);
+procedure TfMain.btnQuestions_for_consultantsClick(Sender: TObject);
 begin
-  Questions_for_consultantsForm.ShowModal;
+  //Questions_for_consultantsForm.ShowModal;
 end;
 
-procedure TForm3.btnRating_workClick(Sender: TObject);
+procedure TfMain.btnRating_workClick(Sender: TObject);
 begin
-  Rating_workForm.ShowModal;
+  //Rating_workForm.ShowModal;
 end;
 
-procedure TForm3.btnStructure_companyClick(Sender: TObject);
+procedure TfMain.btnStructure_companyClick(Sender: TObject);
 begin
-  Structure_companyForm.ShowModal;
+  //Structure_companyForm.ShowModal;
 end;
 
-procedure TForm3.btnSZRClick(Sender: TObject);
+procedure TfMain.btnSZRClick(Sender: TObject);
 begin
-  SZRForm.ShowModal;
+  //SZRForm.ShowModal;
 end;
 
-procedure TForm3.btnTechnology_of_cultivationClick(Sender: TObject);
+procedure TfMain.btnTechnology_of_cultivationClick(Sender: TObject);
 begin
-   Technology_of_cultivationForm.ShowModal;
+   //Technology_of_cultivationForm.ShowModal;
 end;
 
-procedure TForm3.btnTypes_of_jobsClick(Sender: TObject);
+procedure TfMain.btnTypes_of_jobsClick(Sender: TObject);
 begin
-  Types_of_jobsForm.ShowModal;
+  //Types_of_jobsForm.ShowModal;
 end;
 
-procedure TForm3.btnVarietiesClick(Sender: TObject);
+procedure TfMain.btnVarietiesClick(Sender: TObject);
 begin
-   VarietiesForm.ShowModal;
+   //VarietiesForm.ShowModal;
 end;
 
-procedure TForm3.btnWork_shiftsClick(Sender: TObject);
+procedure TfMain.btnWork_shiftsClick(Sender: TObject);
 begin
-   Work_shiftsForm.ShowModal;
+   //Work_shiftsForm.ShowModal;
 end;
 
-procedure TForm3.Button3Click(Sender: TObject);
+procedure TfMain.Button3Click(Sender: TObject);
 begin
- Close;
-  Form1.Close;
+  Close;
+  fLogin.Close;
+
 end;
 
-procedure TForm3.FormClose(Sender: TObject; var Action: TCloseAction);
+procedure TfMain.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
-   Form1.Close;
+  fLogin.Close;
 end;
 
 end.

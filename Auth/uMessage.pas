@@ -29,7 +29,7 @@ implementation
 
 {$R *.dfm}
 
-uses Unit2, unitMessageUpdate;
+uses  uDM, uMessageUpdate;
 
 procedure TmessageForm.btnCloseClick(Sender: TObject);
 begin
@@ -38,7 +38,7 @@ end;
 
 procedure TmessageForm.btnUpdateClick(Sender: TObject);
 begin
-  formMessUpdate.ShowModal;
+ // formMessUpdate.ShowModal;
 end;
 
 end.

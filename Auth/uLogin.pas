@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
-  TForm1 = class(TForm)
+  TfLogin = class(TForm)
     btnLog: TButton;
     edLogin: TEdit;
     edPassword: TEdit;
@@ -26,20 +26,20 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fLogin: TfLogin;
 
 implementation
 
 {$R *.dfm}
 
-uses uDM, uMain, Unit21;
+uses uDM, uMain, uRegistration;
 
-procedure TForm1.btnCloseClick(Sender: TObject);
+procedure TfLogin.btnCloseClick(Sender: TObject);
 begin
   close;
 end;
 
-procedure TForm1.btnLogClick(Sender: TObject);
+procedure TfLogin.btnLogClick(Sender: TObject);
 begin
   DataModule2.ADOQuery1.SQL.Clear;
   DataModule2.ADOQuery1.SQL.Add('Select password from agromes_my_profile Where email='+#39+edLogin.Text+#39);
@@ -53,17 +53,17 @@ begin
         ShowMessage('Пароль не верный')
         else
           begin
-          Form3.Show;
-          Form1.Hide;
+          fMain.Show;
+          fLogin.Hide;
           end;
 end;
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfLogin.Button1Click(Sender: TObject);
 begin
 Form21.ShowModal;
 end;
 
-procedure TForm1.edPasswordKeyPress(Sender: TObject; var Key: Char);
+procedure TfLogin.edPasswordKeyPress(Sender: TObject; var Key: Char);
 begin
 if key=#13 then btnLog.Click;
 

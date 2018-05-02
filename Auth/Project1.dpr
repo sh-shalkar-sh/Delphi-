@@ -2,9 +2,9 @@ program Project1;
 
 uses
   Vcl.Forms,
-  uLogin in 'uLogin.pas' {Form1},
+  uLogin in 'uLogin.pas' {fLogin},
   uDM in 'uDM.pas' {DataModule2: TDataModule},
-  uMain in 'uMain.pas' {Form3},
+  uMain in 'uMain.pas' {fMain},
   uProfile in 'uProfile.pas' {myProfilForm},
   uMessage in 'uMessage.pas' {messageForm},
   uPrintQ in 'uPrintQ.pas' {printQueueForm},
@@ -12,21 +12,19 @@ uses
   uGeneralInfo in 'uGeneralInfo.pas' {General_informationForm},
   uStructureComp in 'uStructureComp.pas' {Structure_companyForm},
   uEmployee in 'uEmployee.pas' {EmployeeForm},
-  Unit11 in 'Unit11.pas' {Machines_and_aggregatesForm},
-  Unit12 in 'Unit12.pas' {Work_shiftsForm},
-  Unit13 in 'Unit13.pas' {Technology_of_cultivationForm},
-  Unit14 in 'Unit14.pas' {Types_of_jobsForm},
-  Unit15 in 'Unit15.pas' {Rating_workForm},
-  Unit16 in 'Unit16.pas' {VarietiesForm},
-  Unit17 in 'Unit17.pas' {FertilizerForm},
-  Unit18 in 'Unit18.pas' {SZRForm},
-  Unit19 in 'Unit19.pas' {Other_goods_and_materialsForm},
-  Unit20 in 'Unit20.pas' {Plans_for_the_development_of_culturesForm},
+  uMashines in 'uMashines.pas' {Machines_and_aggregatesForm},
+  uWorkShifts in 'uWorkShifts.pas' {Work_shiftsForm},
+  uTechnologyCult in 'uTechnologyCult.pas' {Technology_of_cultivationForm},
+  uTypesJob in 'uTypesJob.pas' {Types_of_jobsForm},
+  uRatingWork in 'uRatingWork.pas' {Rating_workForm},
+  UVarieties in 'UVarieties.pas' {VarietiesForm},
+  uVertilizer in 'uVertilizer.pas' {FertilizerForm},
+  uSZR in 'uSZR.pas' {SZRForm},
+  uOtherGoods in 'uOtherGoods.pas' {Other_goods_and_materialsForm},
+  uPlansCultures in 'uPlansCultures.pas' {Plans_for_the_development_of_culturesForm},
   Vcl.Themes,
   Vcl.Styles,
-  Unit21 in 'Unit21.pas' {Form21},
-  Unit22 in 'Unit22.pas' {DataModule22: TDataModule},
-  unitMessageUpdate in 'unitMessageUpdate.pas' {formMessUpdate};
+  uRegistration in 'uRegistration.pas' {Form21};
 
 {$R *.res}
 
@@ -34,9 +32,9 @@ begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
   TStyleManager.TrySetStyle('Luna');
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfLogin, fLogin);
   Application.CreateForm(TDataModule2, DataModule2);
-  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(TfMain, fMain);
   Application.CreateForm(TmyProfilForm, myProfilForm);
   Application.CreateForm(TmessageForm, messageForm);
   Application.CreateForm(TprintQueueForm, printQueueForm);
@@ -55,7 +53,5 @@ begin
   Application.CreateForm(TOther_goods_and_materialsForm, Other_goods_and_materialsForm);
   Application.CreateForm(TPlans_for_the_development_of_culturesForm, Plans_for_the_development_of_culturesForm);
   Application.CreateForm(TForm21, Form21);
-  Application.CreateForm(TDataModule22, DataModule22);
-  Application.CreateForm(TformMessUpdate, formMessUpdate);
   Application.Run;
 end.
