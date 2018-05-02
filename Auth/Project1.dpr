@@ -25,7 +25,7 @@ uses
   Vcl.Themes,
   Vcl.Styles,
   uRegistration in 'uRegistration.pas' {Form21},
-  uHelp in 'uHelp.pas' {fHelp};
+  uHelp in 'uHelp.pas' {fHelp},
   uAbout in 'uAbout.pas' {fAbout};
 
 {$R *.res}

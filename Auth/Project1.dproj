@@ -191,6 +191,7 @@
         </DCCReference>
         <DCCReference Include="uHelp.pas">
             <Form>fHelp</Form>
+	    </DCCReference>
         <DCCReference Include="uAbout.pas">
             <Form>fAbout</Form>
             <FormType>dfm</FormType>
