@@ -26,6 +26,7 @@ uses
   Vcl.Styles,
   uRegistration in 'uRegistration.pas' {Form21},
   uHelp in 'uHelp.pas' {fHelp};
+  uAbout in 'uAbout.pas' {fAbout};
 
 {$R *.res}
 
@@ -55,5 +56,6 @@ begin
   Application.CreateForm(TPlans_for_the_development_of_culturesForm, Plans_for_the_development_of_culturesForm);
   Application.CreateForm(TForm21, Form21);
   Application.CreateForm(TfHelp, fHelp);
+  Application.CreateForm(TfAbout, fAbout);
   Application.Run;
 end.

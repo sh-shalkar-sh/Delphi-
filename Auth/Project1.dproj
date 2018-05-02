@@ -191,6 +191,8 @@
         </DCCReference>
         <DCCReference Include="uHelp.pas">
             <Form>fHelp</Form>
+        <DCCReference Include="uAbout.pas">
+            <Form>fAbout</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
