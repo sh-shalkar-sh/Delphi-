@@ -63,11 +63,11 @@ implementation
 
 {$R *.dfm}
 
-uses uDM, uProfile, uMessage, uLogin;
+uses uDM, uProfile, uMessage, uLogin, uEmployee;
 
 procedure TfMain.btnEmployeeClick(Sender: TObject);
 begin
-  //EmployeeForm.ShowModal;
+  EmployeeForm.ShowModal;
 end;
 
 procedure TfMain.btnFertilizerClick(Sender: TObject);

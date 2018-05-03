@@ -18,7 +18,6 @@ object DataModule2: TDataModule2
     Top = 88
   end
   object queryMessage: TADOQuery
-    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     Parameters = <
@@ -70,7 +69,7 @@ object DataModule2: TDataModule2
     SQL.Strings = (
       'SELECT * FROM agromes_messages')
     Left = 32
-    Top = 208
+    Top = 200
     object AutoIncField1: TAutoIncField
       DisplayWidth = 5
       FieldName = 'id'
