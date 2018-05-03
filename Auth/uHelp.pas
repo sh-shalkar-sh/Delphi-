@@ -8,13 +8,12 @@ uses
 
 type
   TfHelp = class(TForm)
-<<<<<<< HEAD
+
     Button2: TButton;
-    procedure Button2Click(Sender: TObject);
-=======
     Button1: TButton;
+    procedure Button2Click(Sender: TObject);
     procedure Button1Click(Sender: TObject);
->>>>>>> ad6d9c77b6e3b399dcfbccef90af867b05459077
+
   private
     { Private declarations }
   public
@@ -28,15 +27,16 @@ implementation
 
 {$R *.dfm}
 
-<<<<<<< HEAD
+
 procedure TfHelp.Button2Click(Sender: TObject);
 begin
 showmessage('eeeee');
-=======
+end;
+
 procedure TfHelp.Button1Click(Sender: TObject);
 begin
  close;
->>>>>>> ad6d9c77b6e3b399dcfbccef90af867b05459077
+
 end;
 
 end.

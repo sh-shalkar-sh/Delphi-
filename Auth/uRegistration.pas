@@ -66,6 +66,8 @@ then begin
       Adoquery1.Parameters.ParamByName('RegPhone').Value:=EditPhone.Text;
       Adoquery1.Parameters.ParamByName('RegPosition').Value:=EditPosition.Text;
       Adoquery1.ExecSQL;
+      ShowMessage('Вы успешно зарегистрированы!');
+      Form21.Close;
       end
 else ShowMessage('Такой логин уже существует!');
 end;

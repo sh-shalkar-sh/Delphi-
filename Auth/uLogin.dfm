@@ -42,10 +42,10 @@ object fLogin: TfLogin
   end
   object btnLog: TButton
     Left = 224
-    Top = 120
+    Top = 128
     Width = 121
     Height = 25
-    Caption = 'in application'
+    Caption = #1042#1093#1086#1076
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -90,7 +90,7 @@ object fLogin: TfLogin
     Top = 128
     Width = 105
     Height = 25
-    Caption = 'btnClose'
+    Caption = #1047#1072#1082#1088#1099#1090
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -101,8 +101,8 @@ object fLogin: TfLogin
     OnClick = btnCloseClick
   end
   object Button1: TButton
-    Left = 168
-    Top = 167
+    Left = 224
+    Top = 170
     Width = 121
     Height = 25
     Caption = #1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1103

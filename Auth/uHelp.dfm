@@ -13,16 +13,15 @@ object fHelp: TfHelp
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
-<<<<<<< HEAD
   object Button2: TButton
     Left = 48
     Top = 216
     Width = 75
     Height = 25
     Caption = 'Button2'
-    TabOrder = 0
+    TabOrder = 1
     OnClick = Button2Click
-=======
+  end
   object Button1: TButton
     Left = 304
     Top = 128
@@ -31,6 +30,5 @@ object fHelp: TfHelp
     Caption = 'Button1'
     TabOrder = 0
     OnClick = Button1Click
->>>>>>> ad6d9c77b6e3b399dcfbccef90af867b05459077
   end
 end
