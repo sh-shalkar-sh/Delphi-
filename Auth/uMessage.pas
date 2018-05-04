@@ -3,7 +3,8 @@ unit uMessage;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.ExtCtrls, Vcl.DBCtrls,
   Vcl.Grids, Vcl.DBGrids, Vcl.StdCtrls;
 
@@ -40,16 +41,17 @@ implementation
 
 {$R *.dfm}
 
-uses  uDM, uMessageUpdate, uUpdateMess, uAddMessages;
+uses uDM, uMessageUpdate, uUpdateMess, uAddMessages;
 
 procedure MessageClear();
 begin
-  messageForm.edtFind.Text:='';
+  messageForm.edtFind.Text := '';
 end;
 
 procedure MessageLocate();
 begin
-  DataModule2.queryMessage.Locate('caption',messageForm.edtFind.Text,[loCaseInsensitive,loPartialKey]);
+  DataModule2.queryMessage.Locate('caption', messageForm.edtFind.Text,
+    [loCaseInsensitive, loPartialKey]);
 end;
 
 procedure MessageFilter();
@@ -81,12 +83,13 @@ procedure TmessageForm.btnUpdateClick(Sender: TObject);
 begin
   fUpdateMess.ShowModal;
 end;
+
 procedure TmessageForm.FormActivate(Sender: TObject);
 begin
   with DataModule2 do
-    begin
+  begin
 
-    end;
+  end;
 end;
 
 end.

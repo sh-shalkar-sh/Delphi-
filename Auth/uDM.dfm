@@ -73,11 +73,13 @@ object DataModule2: TDataModule2
       item
         Name = 'caption'
         DataType = ftString
+        Size = -1
         Value = Null
       end
       item
         Name = 'date'
         DataType = ftString
+        Size = -1
         Value = Null
       end>
     SQL.Strings = (

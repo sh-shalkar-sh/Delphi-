@@ -3,7 +3,8 @@ unit uAddMessages;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.DBCtrls;
 
 type
@@ -42,25 +43,26 @@ end;
 procedure TfAddMessages.btnOKClick(Sender: TObject);
 begin
   with DataModule2 do
+  begin
+    qryTemp.Close;
+    qryTemp.SQL.Clear;
+    qryTemp.SQL.Add
+      ('INSERT INTO public.agromes_messages(caption, date) VALUES (:caption,:date);');
+    qryTemp.Parameters.ParamByName('caption').Value := edCaption.Text;
+    qryTemp.Parameters.ParamByName('date').Value := StrToInt(edDate.Text);
+    qryTemp.ExecSQL;
+    if qryTemp.RowsAffected > 0 then
     begin
-      qryTemp.Close;
-      qryTemp.SQL.Clear;
-      qryTemp.SQL.Add('INSERT INTO public.agromes_messages(caption, date) VALUES (:caption,:date);');
-      qryTemp.Parameters.ParamByName('caption').Value:=edCaption.Text;
-      qryTemp.Parameters.ParamByName('date').Value:=StrToInt(edDate.Text);
-      qryTemp.ExecSQL;
-      if qryTemp.RowsAffected>0 then
-        begin
-          ShowMessage('Added record');
-          dsMessages.DataSet.Active:=false;
-          dsMessages.DataSet.Active:=true;
-          Close;
-        end
-      else
-        begin
-          ShowMessage('Error');
-        end;
+      ShowMessage('Added record');
+      dsMessages.DataSet.Active := false;
+      dsMessages.DataSet.Active := true;
+      Close;
+    end
+    else
+    begin
+      ShowMessage('Error');
     end;
+  end;
 end;
 
 end.

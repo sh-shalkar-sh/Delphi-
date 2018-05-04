@@ -28,10 +28,8 @@ object myProfilForm: TmyProfilForm
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 801
-    ExplicitHeight = 457
     object lblFio: TDBText
-      Left = 168
+      Left = 216
       Top = 63
       Width = 305
       Height = 26
@@ -39,7 +37,7 @@ object myProfilForm: TmyProfilForm
       DataSource = DataSource1
     end
     object lblEmail: TDBText
-      Left = 168
+      Left = 216
       Top = 104
       Width = 305
       Height = 25
@@ -49,7 +47,7 @@ object myProfilForm: TmyProfilForm
       ParentColor = False
     end
     object lblPhone: TDBText
-      Left = 168
+      Left = 216
       Top = 152
       Width = 305
       Height = 25
@@ -57,7 +55,7 @@ object myProfilForm: TmyProfilForm
       DataSource = DataSource1
     end
     object lblPosition: TDBText
-      Left = 168
+      Left = 216
       Top = 200
       Width = 305
       Height = 23
@@ -65,7 +63,7 @@ object myProfilForm: TmyProfilForm
       DataSource = DataSource1
     end
     object lblComments: TDBText
-      Left = 168
+      Left = 216
       Top = 247
       Width = 305
       Height = 23
@@ -73,7 +71,7 @@ object myProfilForm: TmyProfilForm
       DataSource = DataSource1
     end
     object Label1: TLabel
-      Left = 92
+      Left = 28
       Top = 63
       Width = 54
       Height = 23
@@ -86,7 +84,7 @@ object myProfilForm: TmyProfilForm
       ParentFont = False
     end
     object Label2: TLabel
-      Left = 86
+      Left = 28
       Top = 104
       Width = 60
       Height = 23
@@ -99,7 +97,7 @@ object myProfilForm: TmyProfilForm
       ParentFont = False
     end
     object Label3: TLabel
-      Left = 52
+      Left = 28
       Top = 152
       Width = 94
       Height = 23
@@ -125,7 +123,7 @@ object myProfilForm: TmyProfilForm
       ParentFont = False
     end
     object Label5: TLabel
-      Left = 6
+      Left = 28
       Top = 247
       Width = 140
       Height = 23
@@ -136,6 +134,15 @@ object myProfilForm: TmyProfilForm
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
+    end
+    object Button1: TButton
+      Left = 272
+      Top = 304
+      Width = 75
+      Height = 25
+      Caption = 'Button1'
+      TabOrder = 0
+      OnClick = Button1Click
     end
   end
   object ADOConnection1: TADOConnection
