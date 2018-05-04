@@ -26,7 +26,9 @@ uses
   Vcl.Styles,
   uRegistration in 'uRegistration.pas' {Form21},
   uHelp in 'uHelp.pas' {fHelp},
-  uAbout in 'uAbout.pas' {fAbout};
+  uAbout in 'uAbout.pas' {fAbout},
+  uEmployeeAdd in 'uEmployeeAdd.pas' {EmployeeAddForm},
+  uModifyEmployee in 'uModifyEmployee.pas' {ModifyForm};
 
 {$R *.res}
 
@@ -57,5 +59,7 @@ begin
   Application.CreateForm(TForm21, Form21);
   Application.CreateForm(TfHelp, fHelp);
   Application.CreateForm(TfAbout, fAbout);
+  Application.CreateForm(TEmployeeAddForm, EmployeeAddForm);
+  Application.CreateForm(TModifyForm, ModifyForm);
   Application.Run;
 end.
