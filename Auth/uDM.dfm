@@ -18,6 +18,7 @@ object DataModule2: TDataModule2
     Top = 88
   end
   object queryMessage: TADOQuery
+    Active = True
     Connection = ADOConnection1
     CursorType = ctStatic
     Parameters = <
@@ -43,16 +44,19 @@ object DataModule2: TDataModule2
     Left = 32
     Top = 144
     object queryMessageid: TAutoIncField
+      DisplayLabel = 'ID'
       DisplayWidth = 5
       FieldName = 'id'
       ReadOnly = True
     end
     object queryMessagecaption: TWideStringField
+      DisplayLabel = #1047#1072#1075#1086#1083#1086#1074#1086#1082
       DisplayWidth = 30
       FieldName = 'caption'
       Size = 255
     end
     object queryMessagedate: TIntegerField
+      DisplayLabel = #1044#1072#1090#1072
       DisplayWidth = 15
       FieldName = 'date'
     end
