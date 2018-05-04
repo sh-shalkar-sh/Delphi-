@@ -2,8 +2,8 @@ object fLogin: TfLogin
   Left = 0
   Top = 0
   Caption = 'fLogin'
-  ClientHeight = 203
-  ClientWidth = 353
+  ClientHeight = 202
+  ClientWidth = 398
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,9 +17,9 @@ object fLogin: TfLogin
   object login: TLabel
     Left = 24
     Top = 35
-    Width = 44
+    Width = 50
     Height = 18
-    Caption = 'Login'
+    Caption = #1051#1086#1075#1080#1085
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -30,9 +30,9 @@ object fLogin: TfLogin
   object Password: TLabel
     Left = 24
     Top = 75
-    Width = 77
+    Width = 61
     Height = 18
-    Caption = 'Password'
+    Caption = #1055#1072#1088#1086#1083#1100
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -56,9 +56,9 @@ object fLogin: TfLogin
     OnClick = btnLogClick
   end
   object edLogin: TEdit
-    Left = 168
+    Left = 104
     Top = 32
-    Width = 121
+    Width = 273
     Height = 26
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
@@ -70,9 +70,9 @@ object fLogin: TfLogin
     Text = 'admin'
   end
   object edPassword: TEdit
-    Left = 168
+    Left = 104
     Top = 72
-    Width = 121
+    Width = 273
     Height = 26
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
@@ -101,7 +101,7 @@ object fLogin: TfLogin
     OnClick = btnCloseClick
   end
   object Button1: TButton
-    Left = 224
+    Left = 120
     Top = 170
     Width = 121
     Height = 25

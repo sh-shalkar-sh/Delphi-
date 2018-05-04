@@ -92,7 +92,17 @@ end;
 
 procedure TfMain.btnMy_pofileClick(Sender: TObject);
 begin
-  //myProfilForm.ShowModal;
+with myProfilForm do
+    begin
+      ADOQuery1.Active:=false;
+      ADOQuery1.Parameters.ParamByName('email').Value:=uLogin.e;
+      ADOQuery1.Parameters.ParamByName('pass').Value:=uLogin.p;
+      ADOQuery1.ExecSQL;
+      ADOQuery1.Active:=true;
+
+    end;
+  myProfilForm.ShowModal;
+
 end;
 
 procedure TfMain.btnOther_goods_and_materialsClick(Sender: TObject);

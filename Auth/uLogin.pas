@@ -21,12 +21,16 @@ type
     procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
+
   public
     { Public declarations }
+
   end;
 
 var
   fLogin: TfLogin;
+  e:string;
+  p:string;
 
 implementation
 
@@ -40,6 +44,7 @@ begin
 end;
 
 procedure TfLogin.btnLogClick(Sender: TObject);
+
 begin
   DataModule2.ADOQuery1.SQL.Clear;
   DataModule2.ADOQuery1.SQL.Add('Select password from agromes_my_profile Where email='+#39+edLogin.Text+#39);
@@ -53,9 +58,12 @@ begin
         ShowMessage('Пароль не верный')
         else
           begin
+          e:=edLogin.Text;
+          p:=edPassword.Text;
           fMain.Show;
           fLogin.Hide;
           end;
+
 end;
 
 procedure TfLogin.Button1Click(Sender: TObject);
