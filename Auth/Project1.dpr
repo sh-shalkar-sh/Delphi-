@@ -28,7 +28,8 @@ uses
   uHelp in 'uHelp.pas' {fHelp},
   uAbout in 'uAbout.pas' {fAbout},
   uUpdateMess in 'uUpdateMess.pas' {fUpdateMess},
-  uAddMessages in 'uAddMessages.pas' {fAddMessages};
+  uAddMessages in 'uAddMessages.pas' {fAddMessages},
+  uUpdateProfile in 'uUpdateProfile.pas' {fUpdateProfile};
 
 {$R *.res}
 
@@ -61,5 +62,7 @@ begin
   Application.CreateForm(TfAbout, fAbout);
   Application.CreateForm(TfUpdateMess, fUpdateMess);
   Application.CreateForm(TfAddMessages, fAddMessages);
+  Application.CreateForm(TfUpdateProfile, fUpdateProfile);
   Application.Run;
+
 end.

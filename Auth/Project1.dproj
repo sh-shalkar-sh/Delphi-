@@ -191,9 +191,19 @@
         </DCCReference>
         <DCCReference Include="uHelp.pas">
             <Form>fHelp</Form>
-	    </DCCReference>
+        </DCCReference>
         <DCCReference Include="uAbout.pas">
             <Form>fAbout</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="uUpdateMess.pas">
+            <Form>fUpdateMess</Form>
+        </DCCReference>
+        <DCCReference Include="uAddMessages.pas">
+            <Form>fAddMessages</Form>
+        </DCCReference>
+        <DCCReference Include="uUpdateProfile.pas">
+            <Form>fUpdateProfile</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
