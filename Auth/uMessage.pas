@@ -26,6 +26,7 @@ type
     procedure btnClearClick(Sender: TObject);
     procedure btnLocateClick(Sender: TObject);
     procedure btnAddClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -39,7 +40,7 @@ implementation
 
 {$R *.dfm}
 
-uses  uDM, uMessageUpdate, uUpdateMess;
+uses  uDM, uMessageUpdate, uUpdateMess, uAddMessages;
 
 procedure MessageClear();
 begin
@@ -58,7 +59,7 @@ end;
 
 procedure TmessageForm.btnAddClick(Sender: TObject);
 begin
-  //fUpdateMess.ShowModal;
+  fAddMessages.ShowModal;
 end;
 
 procedure TmessageForm.btnClearClick(Sender: TObject);
@@ -80,4 +81,12 @@ procedure TmessageForm.btnUpdateClick(Sender: TObject);
 begin
   fUpdateMess.ShowModal;
 end;
+procedure TmessageForm.FormActivate(Sender: TObject);
+begin
+  with DataModule2 do
+    begin
+
+    end;
+end;
+
 end.

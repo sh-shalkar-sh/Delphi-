@@ -12,6 +12,7 @@ object messageForm: TmessageForm
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -27,7 +28,6 @@ object messageForm: TmessageForm
     Font.Style = []
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 551
     object edtFind: TEdit
       Left = 16
       Top = 16
@@ -76,8 +76,6 @@ object messageForm: TmessageForm
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    ExplicitWidth = 551
-    ExplicitHeight = 382
     object gridMessages: TDBGrid
       Left = 1
       Top = 1
@@ -118,8 +116,8 @@ object messageForm: TmessageForm
       VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbDelete]
       Align = alBottom
       TabOrder = 1
-      ExplicitTop = 356
-      ExplicitWidth = 549
+      ExplicitLeft = 2
+      ExplicitTop = 404
     end
   end
   object Panel3: TPanel
@@ -135,9 +133,6 @@ object messageForm: TmessageForm
     Font.Style = []
     ParentFont = False
     TabOrder = 2
-    ExplicitLeft = -1
-    ExplicitTop = 543
-    ExplicitWidth = 551
     object btnAdd: TButton
       Left = 184
       Top = 24

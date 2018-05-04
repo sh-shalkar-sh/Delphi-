@@ -69,7 +69,17 @@ object DataModule2: TDataModule2
   object qryTemp: TADOQuery
     Connection = ADOConnection1
     CursorType = ctStatic
-    Parameters = <>
+    Parameters = <
+      item
+        Name = 'caption'
+        DataType = ftString
+        Value = Null
+      end
+      item
+        Name = 'date'
+        DataType = ftString
+        Value = Null
+      end>
     SQL.Strings = (
       'SELECT * FROM agromes_messages')
     Left = 32
