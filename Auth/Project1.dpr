@@ -27,8 +27,14 @@ uses
   uRegistration in 'uRegistration.pas' {Form21},
   uHelp in 'uHelp.pas' {fHelp},
   uAbout in 'uAbout.pas' {fAbout},
+<<<<<<< HEAD
   uEmployeeAdd in 'uEmployeeAdd.pas' {EmployeeAddForm},
   uModifyEmployee in 'uModifyEmployee.pas' {ModifyForm};
+=======
+  uUpdateMess in 'uUpdateMess.pas' {fUpdateMess},
+  uAddMessages in 'uAddMessages.pas' {fAddMessages},
+  uUpdateProfile in 'uUpdateProfile.pas' {fUpdateProfile};
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
 
 {$R *.res}
 
@@ -59,7 +65,14 @@ begin
   Application.CreateForm(TForm21, Form21);
   Application.CreateForm(TfHelp, fHelp);
   Application.CreateForm(TfAbout, fAbout);
+<<<<<<< HEAD
   Application.CreateForm(TEmployeeAddForm, EmployeeAddForm);
   Application.CreateForm(TModifyForm, ModifyForm);
+=======
+  Application.CreateForm(TfUpdateMess, fUpdateMess);
+  Application.CreateForm(TfAddMessages, fAddMessages);
+  Application.CreateForm(TfUpdateProfile, fUpdateProfile);
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
   Application.Run;
+
 end.

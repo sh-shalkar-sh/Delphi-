@@ -56,9 +56,12 @@ var
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
+<<<<<<< HEAD
 
 uses uEmployee, uEmployeeAdd;
 
+=======
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
 {$R *.dfm}
 
 end.

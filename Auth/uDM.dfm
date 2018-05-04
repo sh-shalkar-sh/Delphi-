@@ -44,16 +44,19 @@ object DataModule2: TDataModule2
     Left = 32
     Top = 144
     object queryMessageid: TAutoIncField
+      DisplayLabel = 'ID'
       DisplayWidth = 5
       FieldName = 'id'
       ReadOnly = True
     end
     object queryMessagecaption: TWideStringField
+      DisplayLabel = #1047#1072#1075#1086#1083#1086#1074#1086#1082
       DisplayWidth = 30
       FieldName = 'caption'
       Size = 255
     end
     object queryMessagedate: TIntegerField
+      DisplayLabel = #1044#1072#1090#1072
       DisplayWidth = 15
       FieldName = 'date'
     end
@@ -69,6 +72,7 @@ object DataModule2: TDataModule2
     CursorType = ctStatic
     Parameters = <
       item
+<<<<<<< HEAD
         Name = 'surname'
         DataType = ftString
         Size = 12
@@ -137,6 +141,17 @@ object DataModule2: TDataModule2
       item
         Name = 'ID'
         DataType = ftInteger
+=======
+        Name = 'caption'
+        DataType = ftString
+        Size = -1
+        Value = Null
+      end
+      item
+        Name = 'date'
+        DataType = ftString
+        Size = -1
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
         Value = Null
       end>
     SQL.Strings = (

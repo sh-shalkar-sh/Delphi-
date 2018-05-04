@@ -196,12 +196,23 @@
             <Form>fAbout</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+<<<<<<< HEAD
         <DCCReference Include="uEmployeeAdd.pas">
             <Form>EmployeeAddForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="uModifyEmployee.pas">
             <Form>ModifyForm</Form>
+=======
+        <DCCReference Include="uUpdateMess.pas">
+            <Form>fUpdateMess</Form>
+        </DCCReference>
+        <DCCReference Include="uAddMessages.pas">
+            <Form>fAddMessages</Form>
+        </DCCReference>
+        <DCCReference Include="uUpdateProfile.pas">
+            <Form>fUpdateProfile</Form>
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">

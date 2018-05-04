@@ -1,9 +1,9 @@
-object fLogin: TfLogin
+object fUpdateMess: TfUpdateMess
   Left = 0
   Top = 0
-  Caption = 'fLogin'
-  ClientHeight = 202
-  ClientWidth = 398
+  Caption = 'fUpdateMess'
+  ClientHeight = 274
+  ClientWidth = 286
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,12 +14,12 @@ object fLogin: TfLogin
   Position = poDesktopCenter
   PixelsPerInch = 96
   TextHeight = 13
-  object login: TLabel
-    Left = 24
-    Top = 35
-    Width = 50
+  object Label1: TLabel
+    Left = 16
+    Top = 43
+    Width = 19
     Height = 18
-    Caption = #1051#1086#1075#1080#1085
+    Caption = 'ID'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -27,12 +27,12 @@ object fLogin: TfLogin
     Font.Style = []
     ParentFont = False
   end
-  object Password: TLabel
-    Left = 24
-    Top = 75
-    Width = 61
+  object Label2: TLabel
+    Left = 16
+    Top = 88
+    Width = 87
     Height = 18
-    Caption = #1055#1072#1088#1086#1083#1100
+    Caption = #1047#1072#1075#1086#1083#1086#1074#1086#1082
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -40,26 +40,42 @@ object fLogin: TfLogin
     Font.Style = []
     ParentFont = False
   end
-  object btnLog: TButton
-    Left = 224
-    Top = 128
+  object Label3: TLabel
+    Left = 16
+    Top = 152
+    Width = 39
+    Height = 18
+    Caption = #1044#1072#1090#1072
+    Font.Charset = RUSSIAN_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Verdana'
+    Font.Style = []
+    ParentFont = False
+  end
+  object edtID: TDBEdit
+    Left = 144
+    Top = 40
     Width = 121
-    Height = 25
-    Caption = #1042#1093#1086#1076
+    Height = 26
+    DataField = 'id'
+    DataSource = DataModule2.dsMessages
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
     Font.Name = 'Verdana'
     Font.Style = []
     ParentFont = False
+    ReadOnly = True
     TabOrder = 0
-    OnClick = btnLogClick
   end
-  object edLogin: TEdit
-    Left = 104
-    Top = 32
-    Width = 273
+  object edtCaption: TDBEdit
+    Left = 144
+    Top = 85
+    Width = 121
     Height = 26
+    DataField = 'caption'
+    DataSource = DataModule2.dsMessages
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -67,30 +83,28 @@ object fLogin: TfLogin
     Font.Style = []
     ParentFont = False
     TabOrder = 1
-    Text = 'admin'
   end
-  object edPassword: TEdit
-    Left = 104
-    Top = 72
-    Width = 273
+  object edtDate: TDBEdit
+    Left = 144
+    Top = 149
+    Width = 121
     Height = 26
+    DataField = 'date'
+    DataSource = DataModule2.dsMessages
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
     Font.Name = 'Verdana'
     Font.Style = []
     ParentFont = False
-    PasswordChar = '*'
     TabOrder = 2
-    Text = 'admin'
-    OnKeyPress = edPasswordKeyPress
   end
-  object btnClose: TButton
-    Left = 24
-    Top = 128
-    Width = 105
-    Height = 25
-    Caption = #1047#1072#1082#1088#1099#1090
+  object btnOK: TButton
+    Left = 8
+    Top = 216
+    Width = 100
+    Height = 30
+    Caption = 'OK'
     Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
@@ -98,21 +112,21 @@ object fLogin: TfLogin
     Font.Style = []
     ParentFont = False
     TabOrder = 3
-    OnClick = btnCloseClick
+    OnClick = btnOKClick
   end
-  object Button1: TButton
-    Left = 120
-    Top = 170
-    Width = 121
-    Height = 25
-    Caption = #1088#1077#1075#1080#1089#1090#1088#1072#1094#1080#1103
-    Font.Charset = DEFAULT_CHARSET
+  object btnClose: TButton
+    Left = 165
+    Top = 216
+    Width = 100
+    Height = 30
+    Caption = #1047#1072#1082#1088#1099#1090#1100
+    Font.Charset = RUSSIAN_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
-    Font.Name = 'Tahoma'
+    Font.Name = 'Verdana'
     Font.Style = []
     ParentFont = False
     TabOrder = 4
-    OnClick = Button1Click
+    OnClick = btnCloseClick
   end
 end
