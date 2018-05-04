@@ -12,6 +12,7 @@ object messageForm: TmessageForm
   Font.Style = []
   OldCreateOrder = False
   Position = poDesktopCenter
+  OnActivate = FormActivate
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -115,6 +116,11 @@ object messageForm: TmessageForm
       VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbDelete]
       Align = alBottom
       TabOrder = 1
+<<<<<<< HEAD
+=======
+      ExplicitLeft = 2
+      ExplicitTop = 404
+>>>>>>> 4d2fdbf10d57953ffa8f0a8ee051c702ff88cf6e
     end
   end
   object Panel3: TPanel
