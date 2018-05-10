@@ -3,7 +3,8 @@ unit uMain;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls;
 
 type
@@ -73,17 +74,22 @@ end;
 
 procedure TfMain.btnFertilizerClick(Sender: TObject);
 begin
-  //FertilizerForm.ShowModal;
+  // FertilizerForm.ShowModal;
 end;
 
 procedure TfMain.General_informationClick(Sender: TObject);
 begin
+<<<<<<< HEAD
  GeneralInfoForm.ShowModal;
  end;
+=======
+  // General_informationForm.ShowModal;
+end;
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
 
 procedure TfMain.btnMachines_and_aggregatesClick(Sender: TObject);
 begin
-  //Machines_and_aggregatesForm.ShowModal;
+  // Machines_and_aggregatesForm.ShowModal;
 end;
 
 procedure TfMain.btnMessagesClick(Sender: TObject);
@@ -93,62 +99,72 @@ end;
 
 procedure TfMain.btnMy_pofileClick(Sender: TObject);
 begin
-  //myProfilForm.ShowModal;
+  with myProfilForm do
+  begin
+    ADOQuery1.Active := false;
+    ADOQuery1.Parameters.ParamByName('email').Value := uLogin.e;
+    ADOQuery1.Parameters.ParamByName('pass').Value := uLogin.p;
+    ADOQuery1.ExecSQL;
+    ADOQuery1.Active := true;
+
+  end;
+  myProfilForm.ShowModal;
+
 end;
 
 procedure TfMain.btnOther_goods_and_materialsClick(Sender: TObject);
 begin
-  //Other_goods_and_materialsForm.ShowModal;
+  // Other_goods_and_materialsForm.ShowModal;
 end;
 
 procedure TfMain.btnPlans_for_the_development_of_culturesClick(Sender: TObject);
 begin
-  //Plans_for_the_development_of_culturesForm.ShowModal;
+  // Plans_for_the_development_of_culturesForm.ShowModal;
 end;
 
 procedure TfMain.btnPrint_queueClick(Sender: TObject);
 begin
-  //printQueueForm.ShowModal;
+  // printQueueForm.ShowModal;
 end;
 
 procedure TfMain.btnQuestions_for_consultantsClick(Sender: TObject);
 begin
-  //Questions_for_consultantsForm.ShowModal;
+  // Questions_for_consultantsForm.ShowModal;
 end;
 
 procedure TfMain.btnRating_workClick(Sender: TObject);
 begin
-  //Rating_workForm.ShowModal;
+  // Rating_workForm.ShowModal;
 end;
 
 procedure TfMain.btnStructure_companyClick(Sender: TObject);
 begin
-  //Structure_companyForm.ShowModal;
+  // Structure_companyForm.ShowModal;
 end;
 
 procedure TfMain.btnSZRClick(Sender: TObject);
 begin
-  //SZRForm.ShowModal;
+  // SZRForm.ShowModal;
 end;
 
 procedure TfMain.btnTechnology_of_cultivationClick(Sender: TObject);
 begin
-   //Technology_of_cultivationForm.ShowModal;
+  // Technology_of_cultivationForm.ShowModal;
 end;
 
 procedure TfMain.btnTypes_of_jobsClick(Sender: TObject);
 begin
-  //Types_of_jobsForm.ShowModal;
+  // Types_of_jobsForm.ShowModal;
 end;
 
 procedure TfMain.btnVarietiesClick(Sender: TObject);
 begin
-   //VarietiesForm.ShowModal;
+  // VarietiesForm.ShowModal;
 end;
 
 procedure TfMain.btnWork_shiftsClick(Sender: TObject);
 begin
-   //Work_shiftsForm.ShowModal;
+  // Work_shiftsForm.ShowModal;
 end;
 
 procedure TfMain.Button3Click(Sender: TObject);

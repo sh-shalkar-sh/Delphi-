@@ -1,7 +1,12 @@
 object DataModule2: TDataModule2
   OldCreateOrder = False
+<<<<<<< HEAD
   Height = 461
   Width = 345
+=======
+  Height = 315
+  Width = 337
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
   object ADOConnection1: TADOConnection
     Connected = True
     ConnectionString = 
@@ -44,16 +49,19 @@ object DataModule2: TDataModule2
     Left = 32
     Top = 144
     object queryMessageid: TAutoIncField
+      DisplayLabel = 'ID'
       DisplayWidth = 5
       FieldName = 'id'
       ReadOnly = True
     end
     object queryMessagecaption: TWideStringField
+      DisplayLabel = #1047#1072#1075#1086#1083#1086#1074#1086#1082
       DisplayWidth = 30
       FieldName = 'caption'
       Size = 255
     end
     object queryMessagedate: TIntegerField
+      DisplayLabel = #1044#1072#1090#1072
       DisplayWidth = 15
       FieldName = 'date'
     end
@@ -69,6 +77,10 @@ object DataModule2: TDataModule2
     CursorType = ctStatic
     Parameters = <
       item
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Name = 'surname'
         DataType = ftString
         Size = 12
@@ -93,6 +105,15 @@ object DataModule2: TDataModule2
         Value = Null
       end
       item
+<<<<<<< HEAD
+=======
+        Name = 'departament'
+        DataType = ftString
+        Size = 12
+        Value = Null
+      end
+      item
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Name = 'specialty'
         DataType = ftString
         Size = 12
@@ -131,6 +152,20 @@ object DataModule2: TDataModule2
       item
         Name = 'ID'
         DataType = ftInteger
+<<<<<<< HEAD
+=======
+=======
+        Name = 'caption'
+        DataType = ftString
+        Size = -1
+        Value = Null
+      end
+      item
+        Name = 'date'
+        DataType = ftString
+        Size = -1
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end>
     SQL.Strings = (
@@ -196,7 +231,15 @@ object DataModule2: TDataModule2
     end
     object qryTempspecialty: TWideStringField
       FieldName = 'specialty'
+<<<<<<< HEAD
       LookupDataSet = queryEmployee
+=======
+      ReadOnly = True
+      Size = 255
+    end
+    object qryTempdepartment: TWideStringField
+      FieldName = 'department'
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
       ReadOnly = True
       Size = 255
     end
@@ -214,72 +257,120 @@ object DataModule2: TDataModule2
       item
         Name = 'ID'
         DataType = ftInteger
+<<<<<<< HEAD
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'Name'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'Surname'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'Patronymic'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'Archive'
         DataType = ftBoolean
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'Department'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'Specialty'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'Telephone'
         DataType = ftInteger
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'email'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'rfid'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'description'
         DataType = ftString
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end
       item
         Name = 'code'
         DataType = ftInteger
+<<<<<<< HEAD
         Size = 12
+=======
+        Size = 2
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         Value = Null
       end>
     SQL.Strings = (
@@ -287,6 +378,7 @@ object DataModule2: TDataModule2
     Left = 192
     Top = 24
     object queryEmployeeid: TAutoIncField
+<<<<<<< HEAD
       FieldName = 'id'
       ReadOnly = True
     end
@@ -298,10 +390,19 @@ object DataModule2: TDataModule2
       Size = 255
     end
     object queryEmployeesurname: TWideStringField
+=======
+      DisplayWidth = 4
+      FieldName = 'id'
+      ReadOnly = True
+    end
+    object queryEmployeesurname: TWideStringField
+      DisplayWidth = 10
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
       FieldName = 'surname'
       Size = 255
     end
     object queryEmployeename: TWideStringField
+<<<<<<< HEAD
       FieldName = 'name'
       Size = 255
     end
@@ -557,5 +658,61 @@ object DataModule2: TDataModule2
     DataSet = qryMashines
     Left = 272
     Top = 208
+=======
+      DisplayWidth = 10
+      FieldName = 'name'
+      Size = 255
+    end
+    object queryEmployeepatronymic: TWideStringField
+      DisplayWidth = 12
+      FieldName = 'patronymic'
+      Size = 255
+    end
+    object queryEmployeearchive: TStringField
+      DisplayWidth = 5
+      FieldName = 'archive'
+      Size = 5
+    end
+    object queryEmployeedepartment: TWideStringField
+      DisplayWidth = 20
+      FieldName = 'department'
+      Size = 255
+    end
+    object queryEmployeespecialty: TWideStringField
+      DisplayWidth = 10
+      FieldName = 'specialty'
+      Size = 255
+    end
+    object queryEmployeetelephone: TWideStringField
+      DisplayWidth = 10
+      FieldName = 'telephone'
+      Size = 255
+    end
+    object queryEmployeeemail: TWideStringField
+      DisplayWidth = 10
+      FieldName = 'email'
+      Size = 255
+    end
+    object queryEmployeerfid: TWideStringField
+      DisplayWidth = 10
+      FieldName = 'rfid'
+      Size = 255
+    end
+    object queryEmployeecode: TWideStringField
+      DisplayWidth = 10
+      FieldName = 'code'
+      Size = 255
+    end
+    object queryEmployeedescription: TWideStringField
+      DisplayWidth = 12
+      FieldName = 'description'
+      Size = 255
+    end
+  end
+  object dsEmployee: TDataSource
+    DataSet = queryEmployee
+    Left = 264
+    Top = 24
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
   end
 end

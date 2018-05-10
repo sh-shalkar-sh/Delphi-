@@ -20,6 +20,21 @@ type
     IntegerField1: TIntegerField;
     queryEmployee: TADOQuery;
     dsEmployee: TDataSource;
+<<<<<<< HEAD
+=======
+    queryEmployeeid: TAutoIncField;
+    queryEmployeecode: TWideStringField;
+    queryEmployeesurname: TWideStringField;
+    queryEmployeedescription: TWideStringField;
+    queryEmployeename: TWideStringField;
+    queryEmployeearchive: TStringField;
+    queryEmployeerfid: TWideStringField;
+    queryEmployeetelephone: TWideStringField;
+    queryEmployeespecialty: TWideStringField;
+    queryEmployeedepartment: TWideStringField;
+    queryEmployeeemail: TWideStringField;
+    queryEmployeepatronymic: TWideStringField;
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
     qryTempid_1: TAutoIncField;
     qryTempcode: TWideStringField;
     qryTempsurname: TWideStringField;
@@ -29,6 +44,7 @@ type
     qryTemprfid: TWideStringField;
     qryTemptelephone: TWideStringField;
     qryTempspecialty: TWideStringField;
+<<<<<<< HEAD
     qryTempemail: TWideStringField;
     qryTemppatronymic: TWideStringField;
     qryDepartment: TADOQuery;
@@ -82,6 +98,11 @@ type
     qryMashinesdepartment: TWideStringField;
     qryMashinesplatenumber: TWideStringField;
     qryMashinesmodel: TWideStringField;
+=======
+    qryTempdepartment: TWideStringField;
+    qryTempemail: TWideStringField;
+    qryTemppatronymic: TWideStringField;
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
   private
     { Private declarations }
   public
@@ -94,9 +115,15 @@ var
 implementation
 
 {%CLASSGROUP 'Vcl.Controls.TControl'}
+<<<<<<< HEAD
 
 uses uEmployee, uEmployeeAdd;
 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
 {$R *.dfm}
 
 end.

@@ -196,16 +196,33 @@
             <Form>fAbout</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
         <DCCReference Include="uEmployeeAdd.pas">
             <Form>EmployeeAddForm</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="uModifyEmployee.pas">
             <Form>ModifyForm</Form>
+<<<<<<< HEAD
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="uModifyGeneralInfo.pas">
             <Form>GeneralInfiModifyForm</Form>
+=======
+=======
+        <DCCReference Include="uUpdateMess.pas">
+            <Form>fUpdateMess</Form>
+        </DCCReference>
+        <DCCReference Include="uAddMessages.pas">
+            <Form>fAddMessages</Form>
+        </DCCReference>
+        <DCCReference Include="uUpdateProfile.pas">
+            <Form>fUpdateProfile</Form>
+>>>>>>> fb1d7c2a50cb35898580959ecc3ce4940124bcf8
+>>>>>>> 93d8c0bf53092347e082b2cd76748071ebe7c785
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
