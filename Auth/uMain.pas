@@ -15,7 +15,7 @@ type
     btnPrint_queue: TButton;
     btnQuestions_for_consultants: TButton;
     Button3: TButton;
-    btnGeneral_information: TButton;
+    General_information: TButton;
     btnStructure_company: TButton;
     btnEmployee: TButton;
     btnMachines_and_aggregates: TButton;
@@ -35,7 +35,7 @@ type
     procedure btnMessagesClick(Sender: TObject);
     procedure btnPrint_queueClick(Sender: TObject);
     procedure btnQuestions_for_consultantsClick(Sender: TObject);
-    procedure btnGeneral_informationClick(Sender: TObject);
+    procedure General_informationClick(Sender: TObject);
     procedure btnStructure_companyClick(Sender: TObject);
     procedure btnEmployeeClick(Sender: TObject);
     procedure btnMachines_and_aggregatesClick(Sender: TObject);
@@ -63,7 +63,8 @@ implementation
 
 {$R *.dfm}
 
-uses uDM, uProfile, uMessage, uLogin, uEmployee;
+uses uDM, uProfile, uMessage, uLogin, uEmployee, uGeneralInfo,
+  uModifyGeneralInfo;
 
 procedure TfMain.btnEmployeeClick(Sender: TObject);
 begin
@@ -75,10 +76,10 @@ begin
   //FertilizerForm.ShowModal;
 end;
 
-procedure TfMain.btnGeneral_informationClick(Sender: TObject);
+procedure TfMain.General_informationClick(Sender: TObject);
 begin
-  //General_informationForm.ShowModal;
-end;
+ GeneralInfoForm.ShowModal;
+ end;
 
 procedure TfMain.btnMachines_and_aggregatesClick(Sender: TObject);
 begin

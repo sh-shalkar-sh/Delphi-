@@ -9,7 +9,7 @@ uses
   uMessage in 'uMessage.pas' {messageForm},
   uPrintQ in 'uPrintQ.pas' {printQueueForm},
   uQuestion in 'uQuestion.pas' {Questions_for_consultantsForm},
-  uGeneralInfo in 'uGeneralInfo.pas' {General_informationForm},
+  uGeneralInfo in 'uGeneralInfo.pas' {GeneralInfoForm},
   uStructureComp in 'uStructureComp.pas' {Structure_companyForm},
   uEmployee in 'uEmployee.pas' {EmployeeForm},
   uMashines in 'uMashines.pas' {Machines_and_aggregatesForm},
@@ -26,7 +26,10 @@ uses
   Vcl.Styles,
   uRegistration in 'uRegistration.pas' {Form21},
   uHelp in 'uHelp.pas' {fHelp},
-  uAbout in 'uAbout.pas' {fAbout};
+  uAbout in 'uAbout.pas' {fAbout},
+  uEmployeeAdd in 'uEmployeeAdd.pas' {EmployeeAddForm},
+  uModifyEmployee in 'uModifyEmployee.pas' {ModifyForm},
+  uModifyGeneralInfo in 'uModifyGeneralInfo.pas' {GeneralInfiModifyForm};
 
 {$R *.res}
 
@@ -41,7 +44,7 @@ begin
   Application.CreateForm(TmessageForm, messageForm);
   Application.CreateForm(TprintQueueForm, printQueueForm);
   Application.CreateForm(TQuestions_for_consultantsForm, Questions_for_consultantsForm);
-  Application.CreateForm(TGeneral_informationForm, General_informationForm);
+  Application.CreateForm(TGeneralInfoForm, GeneralInfoForm);
   Application.CreateForm(TStructure_companyForm, Structure_companyForm);
   Application.CreateForm(TEmployeeForm, EmployeeForm);
   Application.CreateForm(TMachines_and_aggregatesForm, Machines_and_aggregatesForm);
@@ -57,5 +60,8 @@ begin
   Application.CreateForm(TForm21, Form21);
   Application.CreateForm(TfHelp, fHelp);
   Application.CreateForm(TfAbout, fAbout);
+  Application.CreateForm(TEmployeeAddForm, EmployeeAddForm);
+  Application.CreateForm(TModifyForm, ModifyForm);
+  Application.CreateForm(TGeneralInfiModifyForm, GeneralInfiModifyForm);
   Application.Run;
 end.

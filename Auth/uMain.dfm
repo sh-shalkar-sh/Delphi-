@@ -124,7 +124,7 @@ object fMain: TfMain
     Font.Style = []
     ParentFont = False
     TabOrder = 2
-    object btnGeneral_information: TButton
+    object General_information: TButton
       Left = 16
       Top = 32
       Width = 193
@@ -137,7 +137,7 @@ object fMain: TfMain
       Font.Style = []
       ParentFont = False
       TabOrder = 0
-      OnClick = btnGeneral_informationClick
+      OnClick = General_informationClick
     end
     object btnStructure_company: TButton
       Left = 16

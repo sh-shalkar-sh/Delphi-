@@ -1,4 +1,4 @@
-unit uGeneralInfo;
+unit uModifyGeneralInfo;
 
 interface
 
@@ -8,9 +8,10 @@ uses
   Vcl.ExtCtrls;
 
 type
-  TGeneralInfoForm = class(TForm)
-    gbGeneralInfo: TGroupBox;
-    GrbSetting: TGroupBox;
+  TGeneralInfiModifyForm = class(TForm)
+    btnGenSave: TButton;
+    btnGenClose: TButton;
+    naviGeneral: TDBNavigator;
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
@@ -19,7 +20,6 @@ type
     Label6: TLabel;
     Label7: TLabel;
     Label8: TLabel;
-    btnGenMod: TButton;
     DBEdit1: TDBEdit;
     DBEdit3: TDBEdit;
     DBEdit4: TDBEdit;
@@ -27,16 +27,9 @@ type
     DBEdit6: TDBEdit;
     DBEdit7: TDBEdit;
     DBEdit8: TDBEdit;
-    Label9: TLabel;
-    Label10: TLabel;
-    Label11: TLabel;
-    DBLookupComboBox1: TDBLookupComboBox;
-    DBLookupComboBox2: TDBLookupComboBox;
-    DBLookupComboBox3: TDBLookupComboBox;
-    Button1: TButton;
     ColorBox1: TColorBox;
-    procedure btnModInfoClick(Sender: TObject);
-    procedure btnGenModClick(Sender: TObject);
+    procedure btnGenCloseClick(Sender: TObject);
+    procedure btnGenSaveClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -44,22 +37,24 @@ type
   end;
 
 var
-  GeneralInfoForm: TGeneralInfoForm;
+  GeneralInfiModifyForm: TGeneralInfiModifyForm;
 
 implementation
 
 {$R *.dfm}
 
-uses uDM, uModifyGeneralInfo;
+uses uDM, uGeneralInfo, uMain;
 
-procedure TGeneralInfoForm.btnGenModClick(Sender: TObject);
+procedure TGeneralInfiModifyForm.btnGenCloseClick(Sender: TObject);
 begin
-  GeneralInfiModifyForm.ShowModal;
+ close;
 end;
 
-procedure TGeneralInfoForm.btnModInfoClick(Sender: TObject);
+procedure TGeneralInfiModifyForm.btnGenSaveClick(Sender: TObject);
 begin
-GeneralInfiModifyForm.ShowModal;
+ naviGeneral.BtnClick(nbPost);
+ ShowMessage('Изменено!');
+  Close;
 end;
 
 end.
